@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Страница */
+body {
+    background: #ffffff;
+    color: #1f2933;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: clamp(24px, 5vw, 60px);  
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+	line-height: 1.2;
+    text-align: center;
+}
+
+h2 {
+    font-size: 21px;
+    margin: 30px 0 10px;
+    text-align: left;
+    color: #111827;
+}
+
+/* Текст */
+p {
+    font-size: 19px;
+    color: #191a1c;
+    text-align: justify;
+	font-weight: 400;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 40px;   
+    margin-top: 10px;     
+    margin-bottom: 12px; 
+    list-style-type: disc;
+}
+
+li {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.four-column-table {
+    width: 100%;               
+    border-collapse: collapse; 
+}
+
+.four-column-table td {
+    border: 1px solid #ccc;    
+    padding: 12px 16px;         
+    text-align: center;    
+	text-align: left; 	
+    vertical-align: middle;     
+    font-size: 19px;
+    background: #f9f9f9;
+}
+.center-text {
+	text-align:center;
+}
+
+.dash-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dash-list li {
+    position: relative;
+    padding-left: 18px;
+}
+
+.dash-list li::before {
+    content: "-";    
+    position: absolute;
+    left: 0;
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;             
+}
+
+.four-column-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;             
+}
+
+.title_dev {
+	text-align:center; 
+	margin: 10px 0 10px;
+}
+
+section {
+    margin-top: 10px;
+}
+
+/* Мобильные устройства */
+@media (max-width: 640px) {
+    .container {
+        margin: 20px auto;  
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-top: 24px;
+	    padding-left: 12px; 
+    }
+
+    p {
+        font-size: 14px;
+    }
+	
+	 .four-column-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+	
+	ul {
+        padding-left: 30px;   
+    }
+
+    li {
+        font-size: 14px;      
+        line-height: 1.5;   
+    }
+}
